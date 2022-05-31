@@ -1,5 +1,6 @@
 exports.isCharacterMatch = function(string1, string2) {
     let cnt1 = 0
+    // This regex example replaces all white space in the string with nothing. without the "" it would replace with undefined.
     let str1Lower = string1.replace(/[^\w]/g, "").toLowerCase()
     let str2Lower = string2.replace(/[^\w]/g, "").toLowerCase()
     // regexp - (/[a-zA-Z]/)
